@@ -9,8 +9,8 @@
   "license": "AGPL-3.0-or-later",
   "author": "operatorjen",
   "type": "module",
-  "main": "index.mjs",
   "scripts": {
-    "test": "node index.test.mjs"
+    "test": "node stage/tests/classifier.test.mjs && node stage/tests/assembler.test.mjs && node stage/tests/verifier.test.mjs && node stage/tests/generator.test.mjs",
+    "stage": "node stage/simulations/stage.mjs"
   }
 }
